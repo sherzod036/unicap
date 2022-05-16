@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  background-color: $primary-color;
+  padding: 60px 0;
+
+  &__heading {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &__nav .list {
+    &__item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__link {
+      font-size: 20px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 45px;
+
+    &-link {
+      font-size: 20px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    margin-bottom: 13px;
+  }
+
+  &__subscribe {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      margin-right: 18px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.view-map {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.copy {
+  background-color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  padding: 12px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}
