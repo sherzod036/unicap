@@ -87,3 +87,19 @@
     text-decoration: underline;
   }
 }
+
+.footer.pages {
+  background-color: transparent;
+  padding: 0;
+
+  & .footer__container {
+    background-color: $primary-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.copy.pages {
+  background-color: transparent;
+  padding: 25px 0;
+}

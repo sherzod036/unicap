@@ -47,12 +47,28 @@
       }
     }
   }
-}
 
-.hamb {
-  background-color: #fff;
-  height: 79px;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
+  & .hamb {
+    background-color: #fff;
+    height: 79px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &.pages {
+    position: relative;
+
+    & .hamb {
+      background-color: $primary-color;
+
+      & svg path {
+        stroke: #fff;
+      }
+    }
+
+    & .list__link {
+      color: $primary-color;
+    }
+  }
 }
