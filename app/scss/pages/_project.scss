@@ -44,6 +44,8 @@
   }
 
   &__whatit {
+    font-family: 'Calibri';
+    font-weight: 400;
     display: block;
     text-align: center;
     letter-spacing: 0.05em;
@@ -62,8 +64,137 @@
       margin-bottom: 43px;
     }
     &-descr {
+      font-family: 'Calibri';
+      font-weight: 400;
       font-size: 18px;
       line-height: 24px;
     }
+  }
+
+  &__benefits {
+    &-right {
+      padding-left: 50px;
+    }
+    &-image {
+      width: 100%;
+      height: 744px;
+      border-radius: 20px;
+      overflow: hidden;
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-top: 60px;
+  }
+
+  &__benefit {
+    width: 50%;
+    margin-bottom: 35px;
+
+    &-heading {
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      color: #828282;
+      margin-bottom: 5px;
+    }
+    &-text {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      color: $primary-color;
+    }
+  }
+
+  &__contacts-phone {
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #636363;
+    margin-bottom: 100px;
+  }
+
+  &__subscribe {
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-text {
+      font-size: 40px;
+      line-height: 48px;
+      text-transform: uppercase;
+      color: #636363;
+      text-decoration: underline;
+      margin-right: 20px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 538px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.accordion {
+  max-width: 619px;
+  width: 100%;
+  &-block {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    &.activable {
+      & .accordion-icon {
+        transform: rotate(45deg);
+      }
+
+      & .accordion-descr {
+        margin-bottom: 36px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  &-title {
+    position: relative;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #636363;
+    display: block;
+    cursor: pointer;
+  }
+  &-icon {
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  &-descr {
+    font-family: 'Calibri';
+    font-weight: 400;
+    max-width: 530px;
+    width: 100%;
+    color: #636363;
+    line-height: 21px;
+    transition: 0.3s;
   }
 }

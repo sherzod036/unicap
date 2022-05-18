@@ -2,7 +2,7 @@ $primary-color: #0d174f;
 
 @font-face {
   font-family: 'Point';
-  src: url('../fonts/Point-Regular.woff2') format('woff2'), url('../fonts/Point-Regular.woff') format('woff');
+  src: url('../fonts/Point/Point-Regular.woff2') format('woff2'), url('../fonts/Point/Point-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@ $primary-color: #0d174f;
 
 @font-face {
   font-family: 'Point';
-  src: url('../fonts/Point-SemiBold.woff2') format('woff2'), url('../fonts/Point-SemiBold.woff') format('woff');
+  src: url('../fonts/Point/Point-SemiBold.woff2') format('woff2'), url('../fonts/Point/Point-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@ $primary-color: #0d174f;
 
 @font-face {
   font-family: 'Point';
-  src: url('../fonts/Point-Bold.woff2') format('woff2'), url('../fonts/Point-Bold.woff') format('woff');
+  src: url('../fonts/Point/Point-Bold.woff2') format('woff2'), url('../fonts/Point/Point-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,8 +26,16 @@ $primary-color: #0d174f;
 
 @font-face {
   font-family: 'Point';
-  src: url('../fonts/Point-Black.woff2') format('woff2'), url('../fonts/Point-Black.woff') format('woff');
+  src: url('../fonts/Point/Point-Black.woff2') format('woff2'), url('../fonts/Point/Point-Black.woff') format('woff');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri/Calibri.woff2') format('woff2'), url('../fonts/Calibri/Calibri.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
