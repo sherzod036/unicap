@@ -1,0 +1,163 @@
+.about-page {
+  width: 100%;
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: $primary-color;
+    margin-bottom: 40px;
+  }
+
+  &__abstract {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__purpose {
+    &-title {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 72px;
+      color: $primary-color;
+      margin-bottom: 43px;
+    }
+    &-descr {
+      font-family: 'Calibri';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $primary-color;
+      margin-bottom: 43px;
+      min-height: 72px;
+    }
+    &-image {
+      width: 100%;
+      height: 233px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__asset {
+    margin-bottom: 46px;
+    &-block {
+      margin-bottom: 54px;
+
+      &_iconable {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &-count {
+      display: block;
+      font-family: 'Calibri';
+      font-weight: 400;
+      font-size: 86px;
+      line-height: 86px;
+      color: $primary-color;
+      opacity: 0.2;
+      margin-bottom: 10px;
+    }
+    &-title {
+      display: block;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $primary-color;
+      margin-bottom: 13px;
+    }
+    &-descr {
+      font-family: 'Calibri';
+      display: block;
+    }
+  }
+
+  &__strategies {
+    &-descr {
+      font-family: 'Calibri';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 56px;
+    }
+    &-image {
+      width: 100%;
+      height: 591px;
+      border-radius: 20px;
+      overflow: hidden;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__strategy {
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid #bdbdbd;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+    color: $primary-color;
+  }
+
+  &__history {
+    position: relative;
+    &-abstract {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &-descr {
+      max-width: 774px;
+      width: 100%;
+      font-family: 'Calibri';
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &__innumber {
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &-blocks {
+      display: flex;
+      align-items: center;
+    }
+    &-title {
+      display: block;
+      font-size: 20px;
+      line-height: 24px;
+      color: #828282;
+      margin-bottom: 5px;
+    }
+    &-text {
+      display: block;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 60px;
+      color: $primary-color;
+    }
+  }
+}
