@@ -1,0 +1,16 @@
+.gallery-page {
+  margin-bottom: 100px;
+  &__block {
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 19px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

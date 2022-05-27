@@ -1,0 +1,101 @@
+.career-page {
+  margin-bottom: 75px;
+  &__block {
+    background: #f5f6f6;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+
+    &.activable {
+      & .career-page__block-inner {
+        margin-bottom: 31px;
+      }
+    }
+
+    &-inner {
+      transition: 0.3s;
+    }
+
+    &-icon {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+
+      & span {
+        width: 25px;
+        height: 4px;
+        background-color: $primary-color;
+        position: absolute;
+        right: 0;
+        transition: 0.3s;
+
+        &.rotatable {
+          transform: rotate(90deg);
+
+          &.activable {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+
+    &-title {
+      display: block;
+      padding: 18px;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: $primary-color;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
+
+    & &-wysiwyg {
+      padding: 0 20px;
+      margin-bottom: 36px;
+    }
+
+    & &-wysiwyg h2 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+
+    & &-wysiwyg ul {
+      margin-bottom: 47px;
+      padding-left: 20px;
+      & li {
+        position: relative;
+        color: #000;
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #000;
+          top: 50%;
+          left: -20px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &-button {
+      font-weight: 600;
+      color: #fff;
+      background: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      padding: 4px 24px;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+  }
+}

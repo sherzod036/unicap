@@ -91,3 +91,15 @@ li {
 .title.center {
   text-align: center;
 }
+
+.main-title {
+  display: block;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+  background: linear-gradient(358.49deg, #d0a95c 1.43%, #ac8546 20.8%, #f9d97f 65.7%, #e2c16c 98.92%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 46px;
+}
